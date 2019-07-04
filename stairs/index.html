@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<title>Лестницы</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.min.css">
+	</head>
+	<body>
+		<header id="app" class="header">
+			<div class="header__wrapper container">
+				<nav class="nav">
+					<button class="nav__btn-menu" v-on:click="menuActive = !menuActive" v-bind:class="{ nav__btnMenuActive: !menuActive }">
+						<span></span>
+					</button>
+					<a class="nav__logo" href="#">
+						<img src="img/logo-mobile.png" width="182" height="55" alt="Логотип">
+					</a>
+					<div class="nav__call">
+						<a class="nav__namber-call" href="#">+7 (982) 7-100-190</a>
+						<a class="nav__btn-call" href="#"><span>Заказать звонок<span></span></span></a>
+					</div>
+				</nav>
+				<nav class="nav__nav" v-bind:class="{ nav__navActive: !menuActive }">
+					<div class="nav__wrapper container">
+						<h2 class="nav__title">Меню</h2>
+						<ul class="nav__list">
+							<li class="nav__item">
+								<a class="nav__link" href="#">Главный</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Услуги</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Преимуства лестниц</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Подробнее о каркасе</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Наши работы</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">О команде</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Отзывы</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Этапы работы</a>
+							</li>
+							<li class="nav__item">
+								<a class="nav__link" href="#">Оформить заяявку</a>
+							</li>
+						</ul>
+						<h3 class="nav__title-contacts">Контакты</h3>
+						<ul class="contact__list">
+							<li class="contact__item">
+								<a class="contact__social contact__vk" href="#"></a>
+								<a class="contact__social contact__telegram" href="#"></a>
+								<a class="contact__social contact__whatsapp" href="#"></a>
+							</li>
+							<li class="contact__item">
+								<a class="contact__link contact__link--grey" href="#">info@glavkarkas.com</a>
+							</li>
+							<li class="contact__item">
+								<a class="contact__link" href="#">+7 (982) 7-100-190</a>
+							</li>
+							<li class="contact__item">
+								<p class="contact__link contact__link--grey">с 8:00 до 21:00</p>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<section class="title">
+					<span class="title__slogan">Оправдываем ожидания. Делаем с душой</span>
+					<h1 class="title__title">Лестницы под ключ</h1>
+					<h3 class="title__text">Монтаж в Свердловской, Тюменской и Челябинской областях</h3>
+					<div class="title__wrap-sale">
+						<p class="title__text-sale">Закажите лестницу под ключ сейчас и получите 10% скидку на обшивку</p>
+						<a class="site__btn" href="#">Хочу заказать</a>
+					</div>
+					<a class="title__abautMe" href="#footer">Подробнее о нас &gt;&gt;</a>
+				</section>
+			</div>
+		</header>
+		<main>
+			<section class="l-type">
+				<div class="l-type__wrapper container">
+					<div class="l-type__section-title">
+						<span class="l-type__span">Наши услуги</span>
+						<h2 class="l-type__title">Для каждого дома своя лестница</h2>
+						<p>Перед началом работы вы получаете<br>3D модель своей лестницы бесплатно.</p>
+						<a class="site__btn" href="#">Хочу заказать</a>
+					</div>
+					<div class="l-type__section">
+						<p class="l-type__text">Металлокаркас для будущей лестницы</p>
+						<p class="l-type__text">Через 2 недели можно ходить с этажа на этаж. <br>Идеальный вариант на этапе строительных работ.</p>
+						<span class="l-type__circle"></span>
+						<span class="l-type__img l-type__img--type1"></span>
+					</div>
+					<div class="l-type__section">
+						<p class="l-type__text">Обшивка вашего каркаса</p>
+						<p class="l-type__text">Обшиваем ваш каркас. Когда ремонт окончен, делаем монтаж ступеней и перил.</p>
+						<p class="l-type__text">Материал обшивки:  сосна, береза, бук, ясень, дуб.</p>
+						<span class="l-type__circle"></span>
+						<span class="l-type__img l-type__img--type2"></span>
+					</div>
+					<div class="l-type__section">
+						<p class="l-type__text">Цельнодеревянные лестницы</p>
+						<p class="l-type__text">Подойдет для традиционного интерьера. Срок изготовления до 1,5 месяцев.</p>
+						<span class="l-type__circle"></span>
+						<span class="l-type__img l-type__img--type3"></span>
+					</div>
+				</div>
+			</section>
+			<section class="advantages">
+				<div class="advantages__wrapper container">
+					<input type="radio" id="list-1" name="list" checked="">
+				    <input type="radio" id="list-2" name="list">
+				    <input type="radio" id="list-3" name="list">
+					<div class="advantages__slider">
+						<div class="advantages__slider-wrap">
+							<label class="advantages__toggle toggle--position-left" for="list-1"></label>
+							<label class="advantages__toggle toggle--position-mid" for="list-2"></label>
+							<label class="advantages__toggle toggle--position-right" for="list-3"></label>
+						</div>
+					</div>
+					<div class="advantages__block" id="list1">
+						<p class="advantages__text">Преимущества лестниц</p>
+						<h2 class="advantages__title">Элитная или прочная?</h2>
+						<p class="advantages__text">Заказывая лестницу у нас, вам не приходится выбирать между эстетикой и надежностью</p>
+						<div class="advantages__wrap">
+							<span class="advantages__number">01</span>
+							<p class="advantages__text">По ней удобно ходить потому, что мы рассчитываем высоту шага, проступь и просвет над головой.</p>
+						</div>
+						<p class="advantages__text-img"><span></span>Наши лестницы радуют глаз и щадят ноги.</p>
+					</div>
+					<div class="advantages__block" id="list2">
+						<p class="advantages__text">Преимущества лестниц</p>
+						<h2 class="advantages__title">Элитная или прочная?</h2>
+						<p class="advantages__text">Заказывая лестницу у нас, вам не приходится выбирать между эстетикой и надежностью</p>
+						<div class="advantages__wrap">
+							<span class="advantages__number">02</span>
+							<p class="advantages__text">По ней удобно ходить потому, что мы рассчитываем высоту шага, проступь и просвет над головой.</p>
+						</div>
+						<p class="advantages__text-img"><span></span>Наши лестницы радуют глаз и щадят ноги.</p>
+					</div>
+					<div class="advantages__block" id="list3">
+						<p class="advantages__text">Преимущества лестниц</p>
+						<h2 class="advantages__title">Элитная или прочная?</h2>
+						<p class="advantages__text">Заказывая лестницу у нас, вам не приходится выбирать между эстетикой и надежностью</p>
+						<div class="advantages__wrap">
+							<span class="advantages__number">03</span>
+							<p class="advantages__text">По ней удобно ходить потому, что мы рассчитываем высоту шага, проступь и просвет над головой.</p>
+						</div>
+						<p class="advantages__text-img"><span></span>Наши лестницы радуют глаз и щадят ноги.</p>
+					</div>
+				</div>
+			</section>
+			<section class="carcas">
+				<div class="carcas__wrapper container">
+					<p class="carcas__text">Подробнее о типах каркаса</p>
+					<h2 class="carcas__title">Каждому свой каркас</h2>
+					<div class="carcas__wrap-btn">
+						<button class="carcas__btn carcas__btnActive">
+								Косоур из листового металлаs
+						</button>
+						<button class="carcas__btn">
+								Швеллер
+						</button>
+						<button class="carcas__btn">
+								Монокосоур
+						</button>
+					</div>
+					<div class="carcas__slide">
+						<div class="carcas__wrap-img">
+							<img class="carcas__img" src="img/carcasimg1.png">
+						</div>
+						<div class="carcas__info">
+							<h3 class="carcas__info-title">Косоур из листового металла — лазерная резка</h3>
+							<p class="carcas__info-text">Преимущества</p>
+							<p class="carcas__advantages">— Легкая и недежная конструкция</p>
+							<p class="carcas__advantages">— Выглядит изящно</p>
+							<p class="carcas__advantages">— Позволяет сделать лестницу сложной формы</p>
+							<p class="carcas__advantages">— Можно смонтировать несколько лестниц друг над другом без опорных столбов</p>
+							<p class="carcas__advantages">— Идеальные формы: сверхточная лазерная резка</p>
+						</div>
+					</div>
+					<div class="carcas__suport">
+						<p class="carcas__question-call">Затрудняетесь с выбором?</p>
+						<div class="carcas__block-call">
+							<p class="carcas__call-text">Закажите звонок и наш специалист поможет выбрать оптимальный каркас</p>
+							<button class="carcas__btn site__btn">Заказать звонок</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="gallery">
+				<div class="gallery__wrapper container">
+					<p class="gallery__span">Выполненные заказы – наша гордость</p>
+					<h2 class="gallery__title">Наши проекты</h2>
+					<section class="gallery__gallery">
+						<div class="gallery__photo">
+							<img class="gallery__img" src="img/gallery/photo1.jpg">
+							<div class="gallery__img-mask">
+								<p class="gallery__img-text">Обшивка металлокаркаса</p>
+							</div>
+						</div>
+						<div class="gallery__photo">
+							<img class="gallery__img" src="img/gallery/photo2.jpg">
+							<div class="gallery__img-mask">
+								<p class="gallery__img-text">Лестница под ключ</p>
+							</div>
+						</div>
+						<div class="gallery__photo">
+							<img class="gallery__img" src="img/gallery/photo3.jpg">
+							<div class="gallery__img-mask">
+								<p class="gallery__img-text">Металлокаркас</p>
+							</div>
+						</div>
+						<div class="gallery__photo">
+							<img class="gallery__img" src="img/gallery/photo4.jpg">
+							<div class="gallery__img-mask">
+								<p class="gallery__img-text">Название проекта</p>
+							</div>
+						</div>
+						<div class="gallery__photo">
+							<img class="gallery__img" src="img/gallery/photo5.jpg">
+							<div class="gallery__img-mask">
+								<p class="gallery__img-text">Цельнодеревянная лестница</p>
+							</div>
+						</div>
+						<div class="gallery__photo">
+							<img class="gallery__img" src="img/gallery/photo6.jpg">
+							<div class="gallery__img-mask">
+								<p class="gallery__img-text">Название проекта</p>
+							</div>
+						</div>
+					</section>
+					<p class="gallery__text">Показать еще
+						<button class="gallery__btn"><span class="gallery__btn-circle"></span></button>
+					Больше работ</p>
+				</div>
+			</section>
+			<section class="srok">
+				<div class="srok__wrapper container">
+					<p class="srok__text">Преимущества нашей команды</p>
+					<h2 class="srok__title">Почему клиенты заказывают у нас?</h2>
+					<div class="srok__block">
+						<div class="srok__card">
+							<span class="srok__number">01</span>
+							<p>Металлокаркас <br><span>за 14 дней</span></p>
+						</div>
+						<div class="srok__card">
+							<span class="srok__number">02</span>
+							<p>Цельнодеревянная <br>лестница <span>за 45 дней</span></p>
+						</div>
+						<div class="srok__card">
+							<span class="srok__number">03</span>
+							<p>Выезжаем на замер <br><span>в течение 48 часов </span></p>
+						</div>
+						<div class="srok__card">
+							<span class="srok__number">04</span>
+							<p><span>50% предоплата</span> <br>по договору</p>
+						</div>
+						<div class="srok__card">
+							<span class="srok__number">05</span>
+							<p>Делаем <span>3D модель</span> <br>лестницы <span>за 24 часа</span></p>
+						</div>
+						<div class="srok__card">
+							<span class="srok__number">06</span>
+							<p>Мастера <span>с 10-ти <br>летним опытом работы</span></p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="comment">
+				<div class="comment__wrapper container">
+					<p class="comment__text">Отзывы наших клиентов</p>
+					<h2 class="comment__title">Выполнили 67 проектов за два года</h2>
+					<input type="radio" id="product-1" name="toggle" checked="">
+				    <input type="radio" id="product-2" name="toggle">
+				    <input type="radio" id="product-3" name="toggle">
+				    <input type="radio" id="product-4" name="toggle">
+					<section class="comment__slide" id="slide1">
+						<div class="comment__img-block">
+							<img src="img/comment/photo1.jpg" alt="Фото итога">
+							<img src="img/comment/photo2.jpg" alt="Фото итога">
+						</div>
+						<div class="comment__block">
+							<div class="comment__user-block">
+								<p class="comment__name">Имя Фамилия</p>
+								<p class="comment__info">41 года, прораб</p>
+							</div>
+							<p class="comment__comment">Заказали металлокаркас на этапе внутренней отделки частного дома. Понравилось, что ребята уложились в сроки вписали лестницу в сложный интерьер. Когда моя бригада закончила грязные работы, приехали мастера и  обшили лестницу деревом. И нам удобно было работать и ступени в идеальном состоянии остались. Мой заказчик доволен, ну и я, само собой.</p>
+						</div>
+					</section>
+					<section class="comment__slide" id="slide2">
+						<div class="comment__img-block">
+							<img src="img/comment/photo1.jpg" alt="Фото итога">
+							<img src="img/comment/photo2.jpg" alt="Фото итога">
+						</div>
+						<div class="comment__block">
+							<div class="comment__user-block">
+								<p class="comment__name">Имя Фамилия</p>
+								<p class="comment__info">42 года, прораб</p>
+							</div>
+							<p class="comment__comment">Заказали металлокаркас на этапе внутренней отделки частного дома. Понравилось, что ребята уложились в сроки вписали лестницу в сложный интерьер. Когда моя бригада закончила грязные работы, приехали мастера и  обшили лестницу деревом. И нам удобно было работать и ступени в идеальном состоянии остались. Мой заказчик доволен, ну и я, само собой.</p>
+						</div>
+					</section>
+					<section class="comment__slide" id="slide3">
+						<div class="comment__img-block">
+							<img src="img/comment/photo1.jpg" alt="Фото итога">
+							<img src="img/comment/photo2.jpg" alt="Фото итога">
+						</div>
+						<div class="comment__block">
+							<div class="comment__user-block">
+								<p class="comment__name">Имя Фамилия</p>
+								<p class="comment__info">43 года, прораб</p>
+							</div>
+							<p class="comment__comment">Заказали металлокаркас на этапе внутренней отделки частного дома. Понравилось, что ребята уложились в сроки вписали лестницу в сложный интерьер. Когда моя бригада закончила грязные работы, приехали мастера и  обшили лестницу деревом. И нам удобно было работать и ступени в идеальном состоянии остались. Мой заказчик доволен, ну и я, само собой.</p>
+						</div>
+					</section>
+					<section class="comment__slide" id="slide4">
+						<div class="comment__img-block">
+							<img src="img/comment/photo1.jpg" alt="Фото итога">
+							<img src="img/comment/photo2.jpg" alt="Фото итога">
+						</div>
+						<div class="comment__block">
+							<div class="comment__user-block">
+								<p class="comment__name">Имя Фамилия</p>
+								<p class="comment__info">44 года, прораб</p>
+							</div>
+							<p class="comment__comment">Заказали металлокаркас на этапе внутренней отделки частного дома. Понравилось, что ребята уложились в сроки вписали лестницу в сложный интерьер. Когда моя бригада закончила грязные работы, приехали мастера и  обшили лестницу деревом. И нам удобно было работать и ступени в идеальном состоянии остались. Мой заказчик доволен, ну и я, само собой.</p>
+						</div>
+					</section>
+					<div class="comment__toggle-block">
+						<button class="comment__toggle comment__toggle-prev"></button>
+						<label for="product-1"></label>
+			            <label for="product-2"></label>
+			            <label for="product-3"></label>
+			            <label for="product-4"></label>
+						<button class="comment__toggle comment__toggle-next"></button>
+					</div>
+				</div>
+			</section>
+			<section class="step-work">
+				<div class="step-work__wrapper container">
+					<p class="step-work__text">Этапы работы</p>
+					<h2 class="step-work__title">Как получить лестницу мечты?</h2>
+					<ul class="step-work__list">
+						<li class="step-work__item">
+							<span class="step-work__item-number step-work__icon1">01</span>
+							<h4 class="step-work__item-title">01. Заявка</h4>
+							<p class="step-work__item-text">Вы оставляете заявку и мы выезжаем на замер в течение 2 дней</p>
+						</li>
+						<li class="step-work__item">
+							<span class="step-work__item-number step-work__icon2">02</span>
+							<h4 class="step-work__item-title">02. Утверждение </h4>
+							<p class="step-work__item-text">После замера делаем эскиз проекта, утверждаем цену. Гарантируем точное соответствие готовой лестницы.</p>
+						</li>
+						<li class="step-work__item">
+							<span class="step-work__item-number step-work__icon3">03</span>
+							<h4 class="step-work__item-title">03. Договор</h4>
+							<p class="step-work__item-text">После заключения договора получаем 50% предоплату. Делаем итоговый проект лестницы. Отдаем в работу.</p>
+						</li>
+						<li class="step-work__item">
+							<span class="step-work__item-number step-work__icon4">04</span>
+							<h4 class="step-work__item-title">04. Производство и монтаж</h4>
+							<p class="step-work__item-text">Производим все элементы конструкции.Привозим на объект. Собираем. Подписываем акт сдачи. Производим полный расчет.</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer id="footer" class="footer">
+			<div class="fotter__wrapper container">
+				<section class="zayavka">
+					<h2 class="zayavka__title">Оставьте заявку на бесплатный замер и получите 10% скидку на обшивку</h2>
+					<p class="zayavka__text">При заказе лестницы с металлокаркасом</p>
+					<button class="zayavka__btn site__btn">Отправить заявку</button>
+				</section>
+				<section class="info">
+					<ul class="info__list contact__list">
+						<li class="contact__item">
+							<a class="contact__social contact__vk" href="#"></a>
+							<a class="contact__social contact__telegram" href="#"></a>
+							<a class="contact__social contact__whatsapp" href="#"></a>
+						</li>
+						<li class="contact__item">
+							<a class="contact__link contact__link--grey" href="#">info@glavkarkas.com</a>
+						</li>
+						<li class="contact__item">
+							<a class="contact__link" href="#">+7 (982) 7-100-190</a>
+						</li>
+						<li class="contact__item">
+							<p class="contact__link contact__link--grey">с 8:00 до 21:00</p>
+						</li>
+					</ul>
+					<div class="info__wrap">
+						<a class="info__design" href="#">Дизайн сайта: Евгения Волчкова</a>
+						<a class="info__soglas" href="#">Пользовательское соглашение</a>
+					</div>
+					<a class="info__logo" href="#app">
+						<img src="img/logo-mobile.png" width="182" height="55" alt="Логотип">
+						<p>©2019</p>
+					</a>
+				</section>
+			</div>
+		</footer>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="js/script.min.js"></script>
+	</body>
+</html>
