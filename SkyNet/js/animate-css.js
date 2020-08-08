@@ -1,0 +1,1 @@
+!function(a){a.fn.animated=function(t){a(this).each(function(){var n=a(this);n.css("opacity","0").addClass("animated").waypoint(function(a){"down"===a&&n.addClass(t).css("opacity","1")},{offset:"90%"})})}}(jQuery);
