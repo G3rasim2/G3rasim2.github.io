@@ -48,7 +48,7 @@
 				<div class="header__wrap container">
 					<div class="header__wrap-1">
 						<a href="index.html">
-							<img src="img/logo.svg" alt="Логотип 'Royal Kit'">
+							<img src="img/logo.png" alt="Логотип 'Royal Kit'">
 						</a>
 						<form class="header__form-search" action="#" method="post">
 							<span class="close-search"></span>
@@ -135,11 +135,8 @@
 							<h2>Сортировка:<label for="global-filter"></label></h2>
 							<div id="block-global-filter">
 								<select name="filter-product">
-									<option value="name-product">Название бренда</option>
-									<option value="name-product">Название бренда</option>
-									<option value="name-product">Название бренда</option>
-									<option value="name-product">Название бренда</option>
-									<option value="name-product">Название бренда</option>
+									<option value="name-product">По возрастанию цены</option>
+									<option value="name-product">По убыванию цены</option>
 								</select>
 								<button class="catalog-filter__open-filter"></button>
 							</div>
@@ -150,63 +147,12 @@
 								<input class="visually-hidden" type="checkbox" id="price-filter" name="price-filter" checked="">
 								<h2>Цена<label for="price-filter"></label></h2>
 								<div id="block-price-filter">
-									<div id="slider-range" class="price-filter-range"></div>
 									<div>
 										<p>от</p>
-										<input type="number" min="0" max="9900" oninput="validity.valid||(value='0');" id="min_price" class="price-range-field">
+										<input type="number" min="0" max="9900" value="100" class="price-range-field">
 										<p>до</p>
-										<input type="number" min="0" max="10000" oninput="validity.valid||(value='10000');" id="max_price" class="price-range-field">
+										<input type="number" min="0" max="10000" value="10000" class="price-range-field">
 									</div>
-								</div>
-							</div>
-							<div class="catalog-filter__brand-filter">
-								<input class="visually-hidden" type="checkbox" id="brand-filter" name="brand-filter" checked="">
-								<h2>Бренды <label for="brand-filter"></label></h2>
-								<div id="block-brand-filter">
-									<label>
-										<input class="visually-hidden" type="checkbox" name="brand-checkbox" checked="">
-										<span>Joie</span>
-									</label>
-									<label>
-										<input class="visually-hidden" type="checkbox" name="brand-checkbox">
-										<span>Moon</span>
-									</label>
-									<label>
-										<input class="visually-hidden" type="checkbox" name="brand-checkbox">
-										<span>Egg</span>
-									</label>
-									<label>
-										<input class="visually-hidden" type="checkbox" name="brand-checkbox">
-										<span>Bumbleride</span>
-									</label>
-									<label>
-										<input class="visually-hidden" type="checkbox" name="brand-checkbox">
-										<span>Simple Parenting</span>
-									</label>
-									<label>
-										<input class="visually-hidden" type="checkbox" name="brand-checkbox">
-										<span>Cybex</span>
-									</label>
-									<label>
-										<input class="visually-hidden" type="checkbox" name="brand-checkbox">
-										<span>Evenflo</span>
-									</label>
-									<label>
-										<input class="visually-hidden" type="checkbox" name="brand-checkbox">
-										<span>Daiichi</span>
-									</label>
-									<label>
-										<input class="visually-hidden" type="checkbox" name="brand-checkbox">
-										<span>Mifold</span>
-									</label>
-									<label>
-										<input class="visually-hidden" type="checkbox" name="brand-checkbox">
-										<span>Baier</span>
-									</label>
-									<label>
-										<input class="visually-hidden" type="checkbox" name="brand-checkbox">
-										<span>Concord</span>
-									</label>
 								</div>
 							</div>
 							<div class="catalog-filter__apply-filter">
@@ -427,9 +373,100 @@
 									</div>
 								</div>
 							</li>
+							<li>
+								<a class="product-card__product" href="product.html"></a>
+								<img class="product-card__img" src="img/catalog-item.jpg" alt="картинка">
+								<h2 class="product-card__title">Детская прогулочная коляска Joie Tourist</h2>
+								<div class="product-card__block-price">
+									<p class="product-card__price">12 900 ₽<span></span></p>
+									<a href="basket.html" class="product-card__basket"></a>
+								</div>
+								<div class="product-card__bottom-panel">
+									<div class="product-card__available">
+										<h3><span></span>Есть в наличии</h3>
+										<p>Доставка на следующий день</p>
+									</div>
+									<div class="product-card__characteristic">
+										<p><b>Вес: </b>6кг</p>
+										<p><b>Максимальный возраст: </b>От рождения до 3-х лет</p>
+										<p><b>Размеры: </b>86 x 52.5 x 106см</p>
+										<p><b>Размеры в сложеном виде: </b>24 x 52.5 x 56.5см</p>
+									</div>
+								</div>
+								<div class="product-card__sidebar">
+									<div class="product-card__active">
+										<img src="img/product-card/img1.jpg" alt="картинка">
+									</div>
+									<div>
+										<img src="img/product-card/img2.jpg" alt="картинка">
+									</div>
+									<div>
+										<img src="img/product-card/img3.jpg" alt="картинка">
+									</div>
+									<div>
+										<img src="img/product-card/img4.jpg" alt="картинка">
+									</div>
+								</div>
+							</li>
+							<li>
+								<a class="product-card__product" href="product.html"></a>
+								<img class="product-card__img" src="img/catalog-item.jpg" alt="картинка">
+								<h2 class="product-card__title">Детская прогулочная коляска Joie Tourist</h2>
+								<div class="product-card__block-price">
+									<p class="product-card__price">12 900 ₽<span></span></p>
+									<a href="basket.html" class="product-card__basket"></a>
+								</div>
+								<div class="product-card__bottom-panel">
+									<div class="product-card__available">
+										<h3><span></span>Есть в наличии</h3>
+										<p>Доставка на следующий день</p>
+									</div>
+									<div class="product-card__characteristic">
+										<p><b>Вес: </b>6кг</p>
+										<p><b>Максимальный возраст: </b>От рождения до 3-х лет</p>
+										<p><b>Размеры: </b>86 x 52.5 x 106см</p>
+										<p><b>Размеры в сложеном виде: </b>24 x 52.5 x 56.5см</p>
+									</div>
+								</div>
+								<div class="product-card__sidebar">
+									<div class="product-card__active">
+										<img src="img/product-card/img1.jpg" alt="картинка">
+									</div>
+									<div>
+										<img src="img/product-card/img2.jpg" alt="картинка">
+									</div>
+									<div>
+										<img src="img/product-card/img3.jpg" alt="картинка">
+									</div>
+									<div>
+										<img src="img/product-card/img4.jpg" alt="картинка">
+									</div>
+								</div>
+							</li>
 						</ul>
 					</div>
 				</div>
+			</section>
+			<section class="news-all-pagination container">
+				<ul class="news-all-pagination">
+				  <li><a href="#">«</a></li>
+				  <li><a class="active" href="#">1</a></li>
+				  <li><a href="#">2</a></li>
+				  <li class="news-all-pagination__select">
+			  		<p class="news-all-pagination__toggle">...</p>
+			  		<div class="news-all-pagination__div">
+			  			<a href="#">1</a>
+				  		<a href="#">2</a>
+				  		<a href="#">3</a>
+				  		<a href="#">4</a>
+				  		<a href="#">5</a>
+				  		<a href="#">6</a>
+			  		</div>
+				  </li>
+				  <li><a href="#">3</a></li>
+				  <li><a href="#">4</a></li>
+				  <li><a href="#">»</a></li>
+				</ul>
 			</section>
 			<section class="catalog-accessory">
 				<div class="catalog-accessory__wrap container">
@@ -642,7 +679,7 @@
 		<footer class="footer">
 			<div class="footer__wrap container">
 				<a href="index.html">
-					<img class="footer__logo" src="img/logo.svg" alt="картинка">
+					<img class="footer__logo" src="img/logo.png" alt="картинка">
 				</a>
 				<div class="footer__regulations">
 					<a href="privacy-policy.html">Политика конфидециальности</a>
@@ -738,67 +775,6 @@
 						marginLeft: '0'
 					});
 				}
-			});
-
-			$("#min_price,#max_price").on('change', function () {
-
-				$('#price-range-submit').show();
-
-				var min_price_range = parseInt($("#min_price").val());
-
-				var max_price_range = parseInt($("#max_price").val());
-
-				if (min_price_range > max_price_range) {
-					$('#max_price').val(min_price_range);
-				}
-
-				$("#slider-range").slider({
-					values: [min_price_range, max_price_range]
-				});
-
-			});
-
-			$("#min_price,#max_price").on("paste keyup", function () {                                        
-
-				var min_price_range = parseInt($("#min_price").val());
-
-				var max_price_range = parseInt($("#max_price").val());
-
-				if(min_price_range == max_price_range){
-
-					max_price_range = min_price_range + 100;
-
-					$("#min_price").val(min_price_range);    
-					$("#max_price").val(max_price_range);
-				}
-
-				$("#slider-range").slider({
-					values: [min_price_range, max_price_range]
-				});
-
-			});
-
-			$(function () {
-				$("#slider-range").slider({
-					range: true,
-					orientation: "horizontal",
-					min: 0,
-					max: 10000,
-					values: [1000, 8000],
-					step: 100,
-
-				slide: function (event, ui) {
-					if (ui.values[0] == ui.values[1]) {
-						return false;
-					}
-
-					$("#min_price").val(ui.values[0]);
-					$("#max_price").val(ui.values[1]);
-					}
-				});
-
-				$("#min_price").val($("#slider-range").slider("values", 0));
-				$("#max_price").val($("#slider-range").slider("values", 1));
 			});
 
 		  // Патерн для формы 

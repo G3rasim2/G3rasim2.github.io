@@ -47,7 +47,7 @@
 				<div class="header__wrap container">
 					<div class="header__wrap-1">
 						<a href="index.html">
-							<img src="img/logo.svg" alt="Логотип 'Royal Kit'">
+							<img src="img/logo.png" alt="Логотип 'Royal Kit'">
 						</a>
 						<form class="header__form-search" action="#" method="post">
 							<span class="close-search"></span>
@@ -165,11 +165,13 @@
 								<button>Добавить в корзину</button>
 								<a href="basket.html">Купить прямо сейчас</a>
 							</div>
-							<div class="product-product__block-4">
-								<a href="#description">Описание</a>
-								<a href="#description">Характеристики</a>
-								<a href="#order-call">Задать вопрос</a>
+						</div>
+						<div class="product-product__consultant">
+							<div>
+								<h4>Внимание!</h4>
+								<p>Видео-консультирование <br> по товару</p>
 							</div>
+							<button class="product-product__btn">Оставить заявку</button>
 						</div>
 						<a href="#" class="product-product__video-product">
 							<span></span>
@@ -278,6 +280,30 @@
 							<p><b>Размеры в сложеном виде:</b> 24 x 52.5 x 56.5см</p>
 						</div>
 					</section>
+				</div>
+			</section>
+			<section style="padding-bottom: 20px; padding-top: 20px;">
+				<div class="container">
+					<h1>Ваши отзывы и вопросы</h1>
+				</div>
+			</section>
+			<section id="order-call" class="catalog-order-call">
+				<div class="catalog-order-call__wrap container">
+					<div class="catalog-order-call__div">
+						<h1>Сомневаетесь в выборе?</h1>
+						<p>Заполните форму, наши специалисты перезвонят вам в ближайшее время и помогут с выбором товара</p>
+						<p>Либо позвоните нам по номеру<br> <a href="tel:+74993945994">+7 (499) 394-59-94</a></p>
+					</div>
+					<form class="catalog-order-call__form" action="#" method="post">
+						<input type="text" name="name" id="order-user-name" placeholder="Ваше имя (необязательно)" minlength="1" maxlength="30" pattern="^[a-zA-ZА-Яа-яЁё\s]+$">
+						<input type="tel" name="phone" id="order-user-phone" placeholder="+7(___)___-__-__" pattern="\+7[\(][0-9]{3}[\)]{0,1}\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required="">
+						<button class="catalog-order-call__btn" type="submit">Отправить заявку</button>
+						<label>
+							<input class="visually-hidden" type="checkbox" name="checkbox" required="" checked="">
+							<span></span>
+							<p>Нажимая на кнопку, я принимаю соглашение на обработку <a href="privacy-policy.html">персональных данных</a></p>
+						</label>
+					</form>
 				</div>
 			</section>
 			<section class="catalog-accessory">
@@ -429,30 +455,6 @@
 					</div>
 				</div>
 			</section>
-			<section style="padding-bottom: 20px;">
-				<div class="container">
-					<h1>Ваши отзывы и вопросы</h1>
-				</div>
-			</section>
-			<section id="order-call" class="catalog-order-call">
-				<div class="catalog-order-call__wrap container">
-					<div class="catalog-order-call__div">
-						<h1>Сомневаетесь в выборе?</h1>
-						<p>Заполните форму, наши специалисты перезвонят вам в ближайшее время и помогут с выбором товара</p>
-						<p>Либо позвоните нам по номеру<br> <a href="tel:+74993945994">+7 (499) 394-59-94</a></p>
-					</div>
-					<form class="catalog-order-call__form" action="#" method="post">
-						<input type="text" name="name" id="order-user-name" placeholder="Ваше имя (необязательно)" minlength="1" maxlength="30" pattern="^[a-zA-ZА-Яа-яЁё\s]+$">
-						<input type="tel" name="phone" id="order-user-phone" placeholder="+7(___)___-__-__" pattern="\+7[\(][0-9]{3}[\)]{0,1}\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required="">
-						<button class="catalog-order-call__btn" type="submit">Отправить заявку</button>
-						<label>
-							<input class="visually-hidden" type="checkbox" name="checkbox" required="" checked="">
-							<span></span>
-							<p>Нажимая на кнопку, я принимаю соглашение на обработку <a href="privacy-policy.html">персональных данных</a></p>
-						</label>
-					</form>
-				</div>
-			</section>
 			<section class="product-about-us">
 				<div class="product-about-us__wrap container">
 					<h1>Мы в цифрах</h1>
@@ -476,7 +478,7 @@
 		<footer class="footer">
 			<div class="footer__wrap container">
 				<a href="index.html">
-					<img class="footer__logo" src="img/logo.svg" alt="картинка">
+					<img class="footer__logo" src="img/logo.png" alt="картинка">
 				</a>
 				<div class="footer__regulations">
 					<a href="privacy-policy.html">Политика конфидециальности</a>
@@ -540,6 +542,24 @@
 				<button class="request-accepted__btn-close"></button>
 				<h1>Ваш запрос принят!</h1>
 				<p>Мы свяжемся с вами <br>в ближайшее время.</p>
+			</div>
+		</section>
+		<section class="request-call-2">
+			<div class="request-call__wrap">
+				<button class="request-call__btn-close"></button>
+				<h1>Оставить заявку <br> на видео-консультирование</h1>
+				<form action="#" method="post">
+					<input class="request-call__input" type="text" name="user" id="user-name" placeholder="Ваше имя" minlength="1" maxlength="30" pattern="^[a-zA-ZА-Яа-яЁё\s]+$">
+					<input class="request-call__input" type="tel" name="phone" id="user-phone" placeholder="+7(___)___-__-__" pattern="\+7[\(][0-9]{3}[\)]{0,1}\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required="">
+					<input class="request-call__input" type="date" name="date" id="user-date">
+					<input class="request-call__input" type="time" name="time" id="user-time" placeholder="Выберите время*">
+					<button class="request-call__btn" type="submit">Отправить заявку</button>
+					<label>
+						<input class="visually-hidden" type="checkbox" name="checkbox" checked="">
+						<span class="request-call__span"></span>
+						<p>Нажимая на кнопку, я принимаю соглашение на обработку <a href="privacy-policy.html">персональных данных</a></p>
+					</label>
+				</form>
 			</div>
 		</section>
 		<div class="request-call__overlay"></div>
