@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Форум: раздел</title>
+    <title>Новости: Главная</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
@@ -266,7 +266,7 @@
     </li>
   </ul>
 </header>
-    <main class="forum-section container">
+    <main class="news-page container">
       <ul class="breadcrumbs">
         <li class="breadcrumbs__item">
           <a class="breadcrumbs__link" href="#">Главная</a>
@@ -278,246 +278,389 @@
           <a class="breadcrumbs__link" href="#">Основной раздел</a>
         </li>
       </ul>
-      <div class="forum-page__section">
-        <ul class="forum-page__section-list">
-          <li class="forum-page__section-item">
-            <img class="forum-page__section-img" src="img/players/img-1.png" alt="img">
-            <div class="forum-page__section-links">
-              <a class="forum-page__section-links-title" href="forum-section.html">Киберспорт: матчи, турниры, команды и игроки</a>
-              <p class="forum-page__section-block-text--mobile">Темы: 223K Сообщения: 5M</p>
-            </div>
-            <p class="forum-page__section-block-text">Темы <span>236K</span></p>
-            <p class="forum-page__section-block-text">Сообщения <span>5M</span></p>
-            <div class="forum-page__section-block-user">
-              <a href="#">
-                <img class="forum-page__section-img" src="img/players/img-2.png" alt="img">
+      <div class="news-page__wrap">
+        <section class="news-page__content">
+          <h1 class="news-page__title">Новости</h1>
+          <ul class="news-page__list">
+            <li class="news-page__item"><a class="news-page__link news-page__link--active" href="#">Все</a></li>
+            <li class="news-page__item"><a class="news-page__link" href="#">Обновления</a></li>
+            <li class="news-page__item"><a class="news-page__link" href="#">Патчи</a></li>
+            <li class="news-page__item"><a class="news-page__link" href="#">Киберспорт</a></li>
+            <li class="news-page__item"><a class="news-page__link" href="#">Интервью</a></li>
+            <li class="news-page__item"><a class="news-page__link" href="#">Статьи</a></li>
+            <li class="news-page__item"><a class="news-page__link" href="#">Разное</a></li>
+            <li class="news-page__item"><a class="news-page__link" href="#">Железо</a></li>
+          </ul>
+          <div class="news-page__search">
+            <input type="search" name="search" placeholder="Поиск по новостям">
+            <button><svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.4999 6C10.4999 6.59094 10.3835 7.17611 10.1573 7.72207 9.93121 8.26804 9.59971 8.76411 9.18191 9.182 8.76401 9.5998 8.26794 9.9313 7.72197 10.1575 7.17601 10.3836 6.59085 10.5 5.9999 10.5 5.40895 10.5 4.82379 10.3836 4.27782 10.1575 3.73186 9.9313 3.23578 9.5998 2.81792 9.182 2.40005 8.76411 2.06859 8.26804 1.84244 7.72207 1.61629 7.17611 1.4999 6.59094 1.4999 6 1.4999 4.80652 1.974 3.66193 2.81792 2.81802 3.66183 1.9741 4.80642 1.5 5.9999 1.5 7.19337 1.5 8.33796 1.9741 9.18191 2.81802 10.0258 3.66193 10.4999 4.80652 10.4999 6zM9.67991 10.74C8.47428 11.676 6.95727 12.1173 5.4377 11.9741 3.91813 11.831 2.51024 11.1141 1.50065 9.9694.491052 8.82471-.0443482 7.33829.00343178 5.81275.0512218 4.2872.678602 2.8372 1.75785 1.75795 2.83711.678699 4.2871.0513194 5.81265.0035294 7.3382-.0442536 8.82461.491149 9.96931 1.50075 11.114 2.51034 11.8309 3.91823 11.974 5.4378 12.1172 6.95736 11.6759 8.47437 10.7399 9.68L13.7799 12.72C13.8536 12.7887 13.9127 12.8715 13.9537 12.9635 13.9947 13.0555 14.0167 13.1548 14.0185 13.2555 14.0203 13.3562 14.0017 13.4562 13.964 13.5496 13.9263 13.643 13.8701 13.7278 13.7989 13.799 13.7277 13.8703 13.6429 13.9264 13.5495 13.9641 13.4561 14.0018 13.3561 14.0204 13.2554 14.0186 13.1547 14.0168 13.0553 13.9948 12.9634 13.9538 12.8714 13.9128 12.7886 13.8537 12.7199 13.78L9.67991 10.74z" fill="#afafb3"></path></svg></button>
+          </div>
+          <ul class="index__news-list">
+            <li class="index__news-item">
+              <a class="index__news-link" href="#">
+                <img class="index__news-img" src="img/index/img-1.jpg" alt="img">
+                <p class="index__news-name">NAVI и Virtus.pro сыграют в одной группе OMEGA League</p>
+                <p class="index__news-stat">Сегодня в 10:00<span><img src="img/icon-like.svg" alt="img">16<img src="img/forum/icon-1.svg" alt="img">16</span></p>
               </a>
-              <div>
-                <a href="#">Возраст отношений</a>
-                <p>6 минут назад <a href="#">Томас Буковский</a></p>
-              </div>
-            </div>
-          </li>
-          <li class="forum-page__section-item">
-            <img class="forum-page__section-img" src="img/players/img-1.png" alt="img">
-            <div class="forum-page__section-links">
-              <a class="forum-page__section-links-title" href="forum-section.html">Общие вопросы и обсуждения</a>
-              <p class="forum-page__section-block-text--mobile">Темы: 223K Сообщения: 5M</p>
-            </div>
-            <p class="forum-page__section-block-text">Темы <span>236K</span></p>
-            <p class="forum-page__section-block-text">Сообщения <span>5M</span></p>
-            <div class="forum-page__section-block-user">
-              <a href="#">
-                <img class="forum-page__section-img" src="img/players/img-2.png" alt="img">
+            </li>
+            <li class="index__news-item">
+              <a class="index__news-link" href="#">
+                <img class="index__news-img" src="img/index/img-2.jpg" alt="img">
+                <p class="index__news-name">NAVI, FlyToMoon и VP.Prodigy вылетели с OGA Dota PIT Season 2</p>
+                <p class="index__news-stat">Сегодня в 10:00<span><img src="img/icon-like.svg" alt="img">16<img src="img/forum/icon-2.svg" alt="img">16<span class="index__news-text-w">+3</span></span></p>
               </a>
-              <div>
-                <a href="#">Возраст отношений</a>
-                <p>6 минут назад <a href="#">Томас Буковский</a></p>
-              </div>
-            </div>
-          </li>
-          <li class="forum-page__section-item">
-            <img class="forum-page__section-img" src="img/players/img-1.png" alt="img">
-            <div class="forum-page__section-links">
-              <a class="forum-page__section-links-title" href="forum-section.html">Общие вопросы и обсуждения</a>
-              <p class="forum-page__section-block-text--mobile">Темы: 223K Сообщения: 5M</p>
-            </div>
-            <p class="forum-page__section-block-text">Темы <span>236K</span></p>
-            <p class="forum-page__section-block-text">Сообщения <span>5M</span></p>
-            <div class="forum-page__section-block-user">
-              <a href="#">
-                <img class="forum-page__section-img" src="img/players/img-2.png" alt="img">
+            </li>
+            <li class="index__news-item">
+              <a class="index__news-link" href="#">
+                <img class="index__news-img" src="img/index/img-3.jpg" alt="img">
+                <p class="index__news-name">MagicaL стал игроком Cyber Legacy</p>
+                <p class="index__news-stat">Сегодня в 10:00<span><img src="img/icon-like.svg" alt="img">16<img src="img/forum/icon-2.svg" alt="img">10</span></p>
               </a>
-              <div>
-                <a href="#">Возраст отношений</a>
-                <p>6 минут назад <a href="#">Томас Буковский</a></p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="forum-section__table">
-        <ul class="pagination">
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">Назад</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">1</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">2</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">3</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">...</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">100</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">Вперед</a>
-          </li>
-        </ul>
-        <ul class="forum-section__list">
-          <li class="forum-section__item forum-section__item--first">
-            <div class="forum-section__col-1">
-            </div>
-            <div class="forum-section__col-2">Заголовок</div>
-            <div class="forum-section__col-3">Ответов Просмотров</div>
-            <div class="forum-section__col-4">Последнее сообщение</div>
-          </li>
-          <li class="forum-section__item forum-section__item--locked">
-            <div class="forum-section__col-1">
-              <a href="#"><img src="img/memes/mem-img.png" alt="img"></a>
-            </div>
-            <div class="forum-section__col-2">
-              <div class="forum-section__title"><a href="#">D2RU CUP</a><img src="img/footer/icon-1.svg" alt="img"></div>
-              <div class="forum-section__name"><a href="#">irqrk</a>, 10 сен 2020</div>
-              <div class="forum-section__mes--mobile"><span>Сообщений: 333</span><a href="#">14 июн 2018 в 18:27</a></div>
-            </div>
-            <div class="forum-section__col-3">
-              <p>Сообщений:<span>333</span></p>
-              <p>Просмотров:<span>6.651</span></p>
-            </div>
-            <div class="forum-section__col-4">
-              <a href="#"><img src="img/memes/mem-img.png" alt="img"></a>
-              <div>
-                <a href="#">Alanthree</a>
-                <p>18 окт 2020</p>
-              </div>
-            </div>
-          </li>
-          <li class="forum-section__item forum-section__item--locked">
-            <div class="forum-section__col-1">
-              <a href="#"><img src="img/memes/mem-img.png" alt="img"></a>
-            </div>
-            <div class="forum-section__col-2">
-              <div class="forum-section__title"><a href="#">Правила раздела "Общие вопросы и обсуждения"</a><img src="img/footer/icon-1.svg" alt="img"></div>
-              <div class="forum-section__name"><a href="#">irqrk</a>, 10 сен 2020</div>
-              <div class="forum-section__mes--mobile"><span>Сообщений: 333</span><a href="#">14 июн 2018 в 18:27</a></div>
-            </div>
-            <div class="forum-section__col-3">
-              <p>Сообщений:<span>333</span></p>
-              <p>Просмотров:<span>6.651</span></p>
-            </div>
-            <div class="forum-section__col-4">
-              <a href="#"><img src="img/memes/mem-img.png" alt="img"></a>
-              <div>
-                <a href="#">Mae Borowski</a>
-                <p>14 июн 2018 в 18:27</p>
-              </div>
-            </div>
-          </li>
-          <li class="forum-section__item forum-section__item--locked">
-            <div class="forum-section__col-1">
-              <a href="#"><img src="img/memes/mem-img.png" alt="img"></a>
-            </div>
-            <div class="forum-section__col-2">
-              <div class="forum-section__title"><a href="#">Полезные ссылки для новичков</a><img src="img/footer/icon-1.svg" alt="img"></div>
-              <div class="forum-section__name"><a href="#">irqrk</a>, 10 сен 2020</div>
-              <div class="forum-section__mes--mobile"><span>Сообщений: 333</span><a href="#">14 июн 2018 в 18:27</a></div>
-            </div>
-            <div class="forum-section__col-3">
-              <p>Сообщений:<span>333</span></p>
-              <p>Просмотров:<span>6.651</span></p>
-            </div>
-            <div class="forum-section__col-4">
-              <a href="#"><img src="img/memes/mem-img.png" alt="img"></a>
-              <div>
-                <a href="#">Minky</a>
-                <p>26 окт 2016 в 10:09</p>
-              </div>
-            </div>
-          </li>
-          <li class="forum-section__item">
-            <div class="forum-section__col-1">
-              <a href="#"><img src="img/memes/mem-img.png" alt="img"></a>
-            </div>
-            <div class="forum-section__col-2">
-              <div class="forum-section__title"><a href="#">D2RU CUP</a></div>
-              <div class="forum-section__name"><a href="#">irqrk</a>, 10 сен 2020</div>
-              <div class="forum-section__mes--mobile"><span>Сообщений: 333</span><a href="#">14 июн 2018 в 18:27</a></div>
-            </div>
-            <div class="forum-section__col-3">
-              <p>Сообщений:<span>333</span></p>
-              <p>Просмотров:<span>6.651</span></p>
-            </div>
-            <div class="forum-section__col-4">
-              <a href="#"><img src="img/memes/mem-img.png" alt="img"></a>
-              <div>
-                <a href="#">Alanthree</a>
-                <p>18 окт 2020</p>
-              </div>
-            </div>
-          </li>
-          <li class="forum-section__item">
-            <div class="forum-section__col-1">
-              <a href="#"><img src="img/memes/mem-img.png" alt="img"></a>
-            </div>
-            <div class="forum-section__col-2">
-              <div class="forum-section__title"><a href="#">Правила раздела "Общие вопросы и обсуждения"</a></div>
-              <div class="forum-section__name"><a href="#">irqrk</a>, 10 сен 2020</div>
-              <div class="forum-section__mes--mobile"><span>Сообщений: 333</span><a href="#">14 июн 2018 в 18:27</a></div>
-            </div>
-            <div class="forum-section__col-3">
-              <p>Сообщений:<span>333</span></p>
-              <p>Просмотров:<span>6.651</span></p>
-            </div>
-            <div class="forum-section__col-4">
-              <a href="#"><img src="img/memes/mem-img.png" alt="img"></a>
-              <div>
-                <a href="#">Mae Borowski</a>
-                <p>14 июн 2018 в 18:27</p>
-              </div>
-            </div>
-          </li>
-          <li class="forum-section__item">
-            <div class="forum-section__col-1">
-              <a href="#"><img src="img/memes/mem-img.png" alt="img"></a>
-            </div>
-            <div class="forum-section__col-2">
-              <div class="forum-section__title"><a href="#">Полезные ссылки для новичков</a></div>
-              <div class="forum-section__name"><a href="#">irqrk</a>, 10 сен 2020</div>
-              <div class="forum-section__mes--mobile"><span>Сообщений: 333</span><a href="#">14 июн 2018 в 18:27</a></div>
-            </div>
-            <div class="forum-section__col-3">
-              <p>Сообщений:<span>333</span></p>
-              <p>Просмотров:<span>6.651</span></p>
-            </div>
-            <div class="forum-section__col-4">
-              <a href="#"><img src="img/memes/mem-img.png" alt="img"></a>
-              <div>
-                <a href="#">Minky</a>
-                <p>26 окт 2016 в 10:09</p>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <ul class="pagination">
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">Назад</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">1</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">2</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">3</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">...</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">100</a>
-          </li>
-          <li class="pagination__item">
-            <a class="pagination__link" href="#">Вперед</a>
-          </li>
-        </ul>
+            </li>
+            <li class="index__news-item">
+              <a class="index__news-link" href="#">
+                <img class="index__news-img" src="img/index/img-4.jpg" alt="img">
+                <p class="index__news-name">RuHub извинилась за высказывания LighTofHeaveN про OG в прямом...</p>
+                <p class="index__news-stat">Сегодня в 10:00<span><img src="img/icon-like.svg" alt="img">16<img src="img/forum/icon-1.svg" alt="img">16<span class="index__news-text-w">+10</span></span></p>
+              </a>
+            </li>
+            <li class="index__news-item">
+              <a class="index__news-link" href="#">
+                <img class="index__news-img" src="img/index/img-5.jpg" alt="img">
+                <p class="index__news-name">Alliance и Nigma вышли в финал верхней сетки OGA Dota PIT Season...</p>
+                <p class="index__news-stat">Сегодня в 10:00<span><img src="img/icon-like.svg" alt="img">16<img src="img/forum/icon-2.svg" alt="img">16<span class="index__news-text-w">+3</span></span></p>
+              </a>
+            </li>
+            <li class="index__news-item">
+              <a class="index__news-link" href="#">
+                <img class="index__news-img" src="img/index/img-6.jpg" alt="img">
+                <p class="index__news-name">Мошенники подделывают матчи с участием профессиональных...</p>
+                <p class="index__news-stat">Сегодня в 10:00<span><img src="img/icon-like.svg" alt="img">16<img src="img/forum/icon-2.svg" alt="img">16<span class="index__news-text-w">+3</span></span></p>
+              </a>
+            </li>
+            <li class="index__news-item">
+              <a class="index__news-link" href="#">
+                <img class="index__news-img" src="img/index/img-7.jpg" alt="img">
+                <p class="index__news-name">Maelstorm о Virtus.pro: «Думаю, что по умолчанию инвайты...</p>
+                <p class="index__news-stat">Сегодня в 10:00<span><img src="img/icon-like.svg" alt="img">16<img src="img/forum/icon-2.svg" alt="img">16<span class="index__news-text-w">+3</span></span></p>
+              </a>
+            </li>
+            <li class="index__news-item">
+              <a class="index__news-link" href="#">
+                <img class="index__news-img" src="img/index/img-8.jpg" alt="img">
+                <p class="index__news-name">Maelstorm о Virtus.pro: «Думаю, что по умолчанию инвайты...</p>
+                <p class="index__news-stat">Сегодня в 10:00<span><img src="img/icon-like.svg" alt="img">16<img src="img/forum/icon-2.svg" alt="img">16<span class="index__news-text-w">+3</span></span></p>
+              </a>
+            </li>
+            <li class="index__news-item">
+              <a class="index__news-link" href="#">
+                <img class="index__news-img" src="img/index/img-9.jpg" alt="img">
+                <p class="index__news-name">Maelstorm о Virtus.pro: «Думаю, что по умолчанию инвайты...</p>
+                <p class="index__news-stat">Сегодня в 10:00<span><img src="img/icon-like.svg" alt="img">16<img src="img/forum/icon-2.svg" alt="img">16<span class="index__news-text-w">+3</span></span></p>
+              </a>
+            </li>
+            <li class="index__news-item">
+              <a class="index__news-link" href="#">
+                <img class="index__news-img" src="img/index/img-10.jpg" alt="img">
+                <p class="index__news-name">Maelstorm о Virtus.pro: «Думаю, что по умолчанию инвайты...</p>
+                <p class="index__news-stat">Сегодня в 10:00<span><img src="img/icon-like.svg" alt="img">16<img src="img/forum/icon-2.svg" alt="img">16</span></p>
+              </a>
+            </li>
+            <li class="index__news-item">
+              <a class="index__news-link" href="#">
+                <img class="index__news-img" src="img/index/img-11.jpg" alt="img">
+                <p class="index__news-name">Самые важные события уходящей недели</p>
+                <p class="index__news-stat">Сегодня в 10:00<span><img src="img/icon-like.svg" alt="img">16<img src="img/forum/icon-2.svg" alt="img">16<span class="index__news-text-w">+3</span></span></p>
+              </a>
+            </li>
+            <li class="index__news-item">
+              <a class="index__news-link" href="#">
+                <img class="index__news-img" src="img/index/img-12.jpg" alt="img">
+                <p class="index__news-name">Maelstorm о Virtus.pro: «Думаю, что по умолчанию инвайты...</p>
+                <p class="index__news-stat">Сегодня в 10:00<span><img src="img/icon-like.svg" alt="img">16<img src="img/forum/icon-2.svg" alt="img">16<span class="index__news-text-w">+3</span></span></p>
+              </a>
+            </li>
+          </ul>
+          <a class="index__news-load" href="#">Загрузить ещё<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.78033 9.7803C5.48744 10.0732 5.01256 10.0732 4.71967 9.7803L.469668 5.53033C.176777 5.23744.176777 4.76256.469668 4.46967L4.71967.21967C5.01256-.0732196 5.48744-.0732196 5.78033.21967 6.0732.51256 6.0732.987441 5.78033 1.28033L2.06066 5 5.78033 8.7197C6.0732 9.0126 6.0732 9.4874 5.78033 9.7803z" fill="#afafb3"></path></svg></a>
+        </section>
+        <section class="news-page__right-bar">
+          <div class="memes component-block">
+  <a class="component-block__title" href="#">Мемы</a>
+  <a class="memes__mem" href="#">
+    <img src="img/memes/mem-img.png" alt="img">
+  </a>
+  <a class="memes__user" href="#">
+    <span class="component-text-grey-13"><img src="img/memes/user.png" alt="img">MyGabenIsTheBest</span>
+    <span class="component-text-grey-13 memes__text">
+      <img src="img/icon-like.svg" alt="img">16 <img src="img/forum/icon-2.svg" alt="img">16 <span class="memes__text--w">+2</span>
+    </span>
+  </a>
+</div>
+          <div class="forum component-block">
+  <a class="component-block__title" href="#">Новости</a>
+  <ul class="component-block__list forum__list">
+    <li class="forum__item">
+      <a class="component-block__link" href="#">
+        <div class="component-block__block forum__block">
+          <p class="component-text-grey-13">CEO HellRaisers: «Что мне в lil me...</p>
+          <span class="component-text-grey-11">3 час. назад</span>
+        </div>
+      </a>
+    </li>
+    <li class="forum__item">
+      <a class="component-block__link" href="#">
+        <div class="component-block__block forum__block">
+          <p class="component-text-grey-13">V1lat: «Было понятно, что Нави ни...</p>
+          <span class="component-text-grey-11">3 час. назад</span>
+        </div>
+      </a>
+    </li>
+    <li class="forum__item">
+      <a class="component-block__link" href="#">
+        <div class="component-block__block forum__block">
+          <p class="component-text-grey-13">CEO HellRaisers: «Что мне в lil me...</p>
+          <span class="component-text-grey-11">3 час. назад</span>
+        </div>
+      </a>
+    </li>
+    <li class="forum__item">
+      <a class="component-block__link" href="#">
+        <div class="component-block__block forum__block">
+          <p class="component-text-grey-13">V1lat: «Было понятно, что Нави ни...</p>
+          <span class="component-text-grey-11">3 час. назад</span>
+        </div>
+      </a>
+    </li>
+    <li class="forum__item">
+      <a class="component-block__link" href="#">
+        <div class="component-block__block forum__block">
+          <p class="component-text-grey-13">CEO HellRaisers: «Что мне в lil me...</p>
+          <span class="component-text-grey-11">3 час. назад</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+          <div class="forum component-block">
+  <a class="component-block__title" href="#">Форум</a>
+  <ul class="component-block__list forum__list">
+    <li class="forum__item">
+      <a class="component-block__link" href="#">
+        <img class="forum__img" src="img/forum/img-4.png" alt="img">
+        <div class="component-block__block forum__block">
+          <p class="component-text-grey-13">Выйдет ли что-то круче...</p>
+          <span class="component-text-grey-11">Dickgirl777<img src="img/forum/icon-1.svg" alt="img">16 <span class="forum__text">+2</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="forum__item">
+      <a class="component-block__link" href="#">
+        <img class="forum__img" src="img/forum/img-2.png" alt="img">
+        <div class="component-block__block forum__block">
+          <p class="component-text-grey-13">У меня нет мнения, что...</p>
+          <span class="component-text-grey-11">Dickgirl777<img src="img/forum/icon-1.svg" alt="img">16 <span class="forum__text">+2</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="forum__item">
+      <a class="component-block__link" href="#">
+        <img class="forum__img" src="img/forum/img-3.png" alt="img">
+        <div class="component-block__block forum__block">
+          <p class="component-text-grey-13">Отношение к антивирусам</p>
+          <span class="component-text-grey-11">Dickgirl777<img src="img/forum/icon-1.svg" alt="img">16 <span class="forum__text">+2</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="forum__item">
+      <a class="component-block__link" href="#">
+        <img class="forum__img" src="img/forum/img-1.png" alt="img">
+        <div class="component-block__block forum__block">
+          <p class="component-text-grey-13">Как вы видите героев?</p>
+          <span class="component-text-grey-11">Dickgirl777<img src="img/forum/icon-1.svg" alt="img">16 <span class="forum__text">+2</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="forum__item">
+      <a class="component-block__link" href="#">
+        <img class="forum__img" src="img/forum/img-2.png" alt="img">
+        <div class="component-block__block forum__block">
+          <p class="component-text-grey-13">5к помойка?</p>
+          <span class="component-text-grey-11">Jenny<img src="img/forum/icon-1.svg" alt="img">35 <span class="forum__text">+10</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="forum__item">
+      <a class="component-block__link" href="#">
+        <img class="forum__img" src="img/forum/img-4.png" alt="img">
+        <div class="component-block__block forum__block">
+          <p class="component-text-grey-13">Выйдет ли что-то круче...</p>
+          <span class="component-text-grey-11">Dickgirl777<img src="img/forum/icon-2.svg" alt="img">13 <span class="forum__text">+2</span></span>
+        </div>
+      </a>
+    </li>
+    <li class="forum__item">
+      <a class="component-block__link" href="#">
+        <img class="forum__img" src="img/forum/img-1.png" alt="img">
+        <div class="component-block__block forum__block">
+          <p class="component-text-grey-13">У меня нет мнения, что...</p>
+          <span class="component-text-grey-11">Kathryn<img src="img/forum/icon-2.svg" alt="img">42</span>
+        </div>
+      </a>
+    </li>
+    <li class="forum__item">
+      <a class="component-block__link" href="#">
+        <img class="forum__img" src="img/forum/img-5.png" alt="img">
+        <div class="component-block__block forum__block">
+          <p class="component-text-grey-13">отношение к антивирусам</p>
+          <span class="component-text-grey-11">Ralph<img src="img/forum/icon-2.svg" alt="img">26</span>
+        </div>
+      </a>
+    </li>
+    <li class="forum__item">
+      <a class="component-block__link" href="#">
+        <img class="forum__img" src="img/forum/img-3.png" alt="img">
+        <div class="component-block__block forum__block">
+          <p class="component-text-grey-13">iphone 11 or 12?</p>
+          <span class="component-text-grey-11">Brooklyn<img src="img/forum/icon-2.svg" alt="img">15</span>
+        </div>
+      </a>
+    </li>
+    <li class="forum__item">
+      <a class="forum__link--arrow" href="#">
+        <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.78033 9.7803C5.48744 10.0732 5.01256 10.0732 4.71967 9.7803L.469668 5.53033C.176777 5.23744.176777 4.76256.469668 4.46967L4.71967.21967C5.01256-.0732196 5.48744-.0732196 5.78033.21967 6.0732.51256 6.0732.987441 5.78033 1.28033L2.06066 5 5.78033 8.7197C6.0732 9.0126 6.0732 9.4874 5.78033 9.7803z" fill="#afafb3"></path></svg>
+      </a>
+    </li>
+  </ul>
+</div>
+
+          <div class="streams component-block">
+  <a class="component-block__title" href="#">Стримы</a>
+  <ul class="component-block__list">
+    <li class="streams__item">
+      <a class="component-block__link" href="#">
+        <img src="img/streams/img-1.png" alt="img">
+        <div class="component-block__block">
+          <p class="component-text-grey-13 streams__text">Dota2RuHub<span>19231<img src="img/streams/icon-1.svg" alt="img"></span></p>
+          <span class="component-text-grey-11">Reality Rift vs 496 Gaming | BO3</span>
+        </div>
+      </a>
+    </li>
+    <li class="streams__item">
+      <a class="component-block__link" href="#">
+        <img src="img/streams/img-2.png" alt="img">
+        <div class="component-block__block">
+          <p class="component-text-grey-13 streams__text">Stray228<span>19231<img src="img/streams/icon-1.svg" alt="img"></span></p>
+          <span class="component-text-grey-11">!dragon ХРШ EZ с 3к до 7к на ран...</span>
+        </div>
+      </a>
+    </li>
+    <li class="streams__item">
+      <a class="component-block__link" href="#">
+        <img src="img/streams/img-3.png" alt="img">
+        <div class="component-block__block">
+          <p class="component-text-grey-13 streams__text">ybicanoooobov<span>19231<img src="img/streams/icon-1.svg" alt="img"></span></p>
+          <span class="component-text-grey-11">Спящий пробудился </span>
+        </div>
+      </a>
+    </li>
+    <li class="streams__item">
+      <a class="component-block__link" href="#">
+        <img src="img/streams/img-4.png" alt="img">
+        <div class="component-block__block">
+          <p class="component-text-grey-13 streams__text">sh4dow <span>19231<img src="img/streams/icon-1.svg" alt="img"></span></p>
+          <span class="component-text-grey-11">9к !уши</span>
+        </div>
+      </a>
+    </li>
+    <li class="streams__item">
+      <a class="component-block__link" href="#">
+        <img src="img/streams/img-5.png" alt="img">
+        <div class="component-block__block">
+          <p class="component-text-grey-13 streams__text">Травоман<span>19231<img src="img/streams/icon-1.svg" alt="img"></span></p>
+          <span class="component-text-grey-11">Custom Hero Chaos!</span>
+        </div>
+      </a>
+    </li>
+    <li class="streams__item">
+      <a class="component-block__link" href="#">
+        <img src="img/streams/img-6.png" alt="img">
+        <div class="component-block__block">
+          <p class="component-text-grey-13 streams__text">weron8<span>19231<img src="img/streams/icon-1.svg" alt="img"></span></p>
+          <span class="component-text-grey-11">Live! OG.Ceb vs CL.MagicaL & ...</span>
+        </div>
+      </a>
+    </li>
+    <li class="streams__item">
+      <a class="component-block__link" href="#">
+        <img src="img/streams/img-7.png" alt="img">
+        <div class="component-block__block">
+          <p class="component-text-grey-13 streams__text">eskobartv<span>19231<img src="img/streams/icon-1.svg" alt="img"></span></p>
+          <span class="component-text-grey-11">[RU/EN] Revenge Gaming vs Team ...</span>
+        </div>
+      </a>
+    </li>
+    <li class="streams__item">
+      <a class="component-block__link" href="#">
+        <img src="img/streams/img-8.png" alt="img">
+        <div class="component-block__block">
+          <p class="component-text-grey-13 streams__text">Ghostik<span>19231<img src="img/streams/icon-1.svg" alt="img"></span></p>
+          <span class="component-text-grey-11">GGBET TOP MK ВСЕЛЕННОЙ 3K ...</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+          <div class="video component-block">
+  <a class="component-block__title" href="#">Видео</a>
+  <ul class="component-block__list">
+    <li class="video__item">
+      <a class="component-block__link" href="#">
+        <img class="video__img" src="img/video/img-1.png" alt="img">
+        <div class="component-block__block">
+          <p class="component-text-grey-13 streams__text">5 стримснайперов душат Стрея</p>
+          <span class="component-text-grey-11">3 ч назад <img src="img/streams/icon-1.svg" alt="img"> 1623</span>
+        </div>
+      </a>
+    </li>
+    <li class="video__item">
+      <a class="component-block__link" href="#">
+        <img class="video__img" src="img/video/img-2.png" alt="img">
+        <div class="component-block__block">
+          <p class="component-text-grey-13 streams__text">Стрей проверяет свой фингер на мидовом лионе / Дота 2 Patch 7.27</p>
+          <span class="component-text-grey-11">3 ч назад <img src="img/streams/icon-1.svg" alt="img"> 1623</span>
+        </div>
+      </a>
+    </li>
+    <li class="video__item">
+      <a class="component-block__link" href="#">
+        <img class="video__img" src="img/video/img-3.png" alt="img">
+        <div class="component-block__block">
+          <p class="component-text-grey-13 streams__text">5 стримснайперов душат Стрея</p>
+          <span class="component-text-grey-11">3 ч назад <img src="img/streams/icon-1.svg" alt="img"> 1623</span>
+        </div>
+      </a>
+    </li>
+    <li class="video__item">
+      <a class="component-block__link" href="#">
+        <img class="video__img" src="img/video/img-4.png" alt="img">
+        <div class="component-block__block">
+          <p class="component-text-grey-13 streams__text">Стрей проверяет свой фингер на мидовом лионе / Дота 2 Patch 7.27</p>
+          <span class="component-text-grey-11">3 ч назад <img src="img/streams/icon-1.svg" alt="img"> 1623</span>
+        </div>
+      </a>
+    </li>
+    <li class="video__item">
+      <a class="component-block__link" href="#">
+        <img class="video__img" src="img/video/img-5.png" alt="img">
+        <div class="component-block__block">
+          <p class="component-text-grey-13 streams__text">5 стримснайперов душат Стрея</p>
+          <span class="component-text-grey-11">3 ч назад <img src="img/streams/icon-1.svg" alt="img"> 1623</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>
+        </section>
       </div>
     </main>
     <footer class="footer">
